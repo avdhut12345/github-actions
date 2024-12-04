@@ -28,5 +28,8 @@ jobs:
          username: ${{secrets.USER_NAME}}
          password: ${{secrets.USER_PASSWORD}}
 
+      - name: Push docker image in docker hub
+        run: docker push avdhut2002/addtwonumbers:latest
+
    
    
