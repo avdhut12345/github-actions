@@ -18,5 +18,8 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'  
+
+      - name: Build docker image
+        run: docker build -t avdhut2002/addtwonumbers:latest -f Dockerfile .
    
    
